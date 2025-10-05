@@ -1,0 +1,37 @@
+dependencies:
+  espressif/tinyusb:
+    component_hash: c00f4401bce3fdb6686ea413a63e8f1485cce1cfd67f933c3b76bef4af5dcf05
+    dependencies:
+    - name: idf
+      version: '>=5.0'
+    source:
+      git: https://github.com/RigoLigoRLC/espressif-tinyusb-component.git
+      path: .
+      type: git
+    targets:
+    - esp32s2
+    - esp32s3
+    - esp32p4
+    - esp32h4
+    version: 1c94fa13acc240e987a9c537b50b54d7a4e52345
+  idf:
+    source:
+      type: idf
+    version: 5.5.1
+  joltwallet/littlefs:
+    component_hash: 8e12955f47e27e6070b76715a96d6c75fc2b44f069e8c33679332d9bdd3120c4
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=5.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.20.1
+direct_dependencies:
+- espressif/tinyusb
+- idf
+- joltwallet/littlefs
+manifest_hash: a0ca2d9de5fe2907c8c92e3f081518d71b39fa5924ed2a76e6b5c4bd488ac457
+target: esp32s3
+version: 2.0.0

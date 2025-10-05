@@ -1,0 +1,16 @@
+
+# esp-idf built binaries
+build/
+build_*_*/
+
+# managed components are fetched automatically on build time
+managed_components/
+
+# clangd
+.cache/
+
+# macOS
+**/.DS_Store
+
+# IDE settings
+.vscode/settings.json
