@@ -1,0 +1,8 @@
+/build/
+
+# Visual Studio
+.vs/
+/out/
+
+# Visual Studio Code
+/.vscode/
